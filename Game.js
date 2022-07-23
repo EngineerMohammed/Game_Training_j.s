@@ -1,5 +1,3 @@
-
-
 // craet the splash on all page by control-Buttons
 document.querySelector(".control-Buttons").onclick = function () {
   let YourName = prompt("Whats Your Name");
@@ -19,6 +17,27 @@ let blocks = Array.from(document.querySelector(".memory-Game-blocks").children);
 let orderRange = [...Array(blocks.length).keys()];
 // Creat Shuffel function to set Random numbers
 
+// Create Flip Block Function
+
+Shuffel(orderRange);
+
+// set order to every div using forEach
+blocks.forEach((block, index) => {
+  block.style.order = orderRange[index];
+  // add Block Event
+  block.addEventListener("click", function () {
+    // treger flipblock funcnction
+    flipBlock(block);
+  });
+});
+
+function flipBlock(selecedBlock) {
+  console.log('kkkk 22')
+  selecedBlock.classList.add('is-flipped')
+    console.log("kkkk ttt");
+
+}
+// =========================================
 function Shuffel(array) {
   let current = array.length,
     temp,
@@ -36,12 +55,7 @@ function Shuffel(array) {
   }
   return array;
 }
-
-// set order to every div using forEach
-blocks.forEach((block, index) => {
-  block.style.order = orderRange[index];
-});
-
-// console.log(orderRange);=> before the Shuffel function Run
-Shuffel(orderRange);
-// console.log(orderRange);After the Shuffel function Run
+// ======================================================
+// console.log(orderRange);//=> before the Shuffel function Run
+// Shuffel(orderRange);
+// console.log(orderRange);//After the Shuffel function Run
