@@ -22,18 +22,18 @@ body {
   background-color: #f44336;
   color: #fff;
   padding: 15px 25px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .info-container {
-  width: 1080px;
-  margin: 20px auto 0;
+  width: 1020px;
+  margin: 10px auto 0;
   background-color: #f6f6f6;
-  padding: 20px;
-  font-size: 24px;
+  padding: 10px;
+  font-size: 20px;
   overflow: hidden;
   border: 2px solid #2196f3;
 }
@@ -49,7 +49,7 @@ body {
 
 .memory-Game-blocks {
   display: flex;
-  width: 1100px;
+  width: 1080px;
   flex-wrap: wrap;
   margin: 20px auto;
 }
@@ -82,8 +82,8 @@ body {
 }
 
 .memory-Game-blocks .game-block .back img {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   margin-top: 30px;
 }
 .memory-Game-blocks .game-block .face {
